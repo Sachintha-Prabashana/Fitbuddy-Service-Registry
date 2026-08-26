@@ -3,17 +3,16 @@
 ## Student Information
 - **Name**: R.K. Sachintha Prabashana
 - **Student ID**: 241722032
-- **GCP Project ID**: [Your GCP Project ID]
+- **GCP Project ID**: `fitbuddy-505618`
 
 ## Project Description
 The Service Registry enables service discovery and registration for all microservices in the FitBuddy platform. It ensures seamless communication between services.
 
 ## Technology Stack
-- **Programming Language**: Java
-- **Framework**: Spring Boot
-- **Service Discovery**: Netflix Eureka
+- **Programming Language**: Java 25
+- **Framework**: Spring Boot 4.0.1
+- **Service Discovery**: Spring Cloud Netflix Eureka Server
 - **Build Tool**: Maven
-- **Other Tools**: Docker
 
 ## Project Structure
 ```
@@ -24,16 +23,15 @@ service-registry/
 │   │   ├── resources/  # Configuration files
 │   └── test/  # Unit and integration tests
 ├── pom.xml  # Maven configuration
-├── README.md  # Documentation
-└── target/  # Compiled output
+└── README.md  # Documentation
 ```
 
 ## Setup / Getting Started Instructions
 1. Clone the repository.
 2. Navigate to the `service-registry` directory.
-3. Run `mvn clean install` to build the project.
-4. Start the application using `mvn spring-boot:run`.
-5. Access the Service Registry at `http://localhost:8761`.
+3. Run `./mvnw clean install` to build the project.
+4. Start the application using `./mvnw spring-boot:run`.
+5. Access the Service Registry at `http://localhost:9000`.
 
 ## Dependencies
 - Spring Boot Starter Web
